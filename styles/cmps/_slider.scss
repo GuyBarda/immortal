@@ -1,0 +1,66 @@
+.trainers {
+    overflow: hidden;
+    // padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+
+    &:hover .trainers-slider {
+        animation-play-state: paused;
+    }
+
+    // &::before,
+    // &::after {
+    //     position: absolute;
+    //     top: 0;
+    //     width: 250px;
+    //     height: 100%;
+    //     content: '';
+    //     z-index: 2;
+    // }
+
+    // &::before {
+    //     background: linear-gradient(to left, #ffffff00, white);
+    //     left: 0;
+    // }
+    // &::after {
+    //     background: linear-gradient(to right, #ffffff00, white);
+    //     right: 0;
+    // }
+    // perspective: 100px;
+
+    .trainers-slider {
+        // &.right {
+        //     direction: rtl;
+        // }
+        // direction: rtl;
+        animation: 35s slideLeft infinite linear;
+        display: inline-block;
+
+        img {
+            &:hover {
+                transform: scale(1.1);
+            }
+            cursor: pointer;
+            height: 200px;
+            margin: 0 20px;
+            transition: all 0.5s;
+        }
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+@keyframes slideRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}

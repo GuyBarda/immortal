@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    // direction: rtl;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    // &::-webkit-scrollbar-track {
+    //     -webkit-box-shadow: inset 0 0 6px rgba(107, 107, 107, 0.3);
+    //     border-radius: 20px;
+    //     background-color: #f5f5f5;
+    // }
+
+    // &::-webkit-scrollbar {
+    //     width: 5px;
+    //     background-color: #f5f5f5;
+    // }
+
+    // &::-webkit-scrollbar-thumb {
+    //     border-radius: 20px;
+    //     -webkit-box-shadow: inset 0 0 6px rgba(83, 83, 83, 0.3);
+    //     background-color: #d4d4d4;
+    // }
+}
+
+input,
+textarea,
+button,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: inherit;
+    font-size: 1rem;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    background-color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+#root,
+.App {
+    min-height: 100vh;
+    position: relative;
+}
+
+.loader {
+    width: 270px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.ascending {
+    color: rgb(100, 194, 100);
+}
+
+.descending {
+    color: rgb(194, 100, 100);
+}
+
+.grid-center {
+    display: grid;
+    place-items: center;
+}
+
+// @media (min-width: 638px) {
+//     p {
+//         font-size: 1.2rem;
+//     }
+
+//     .card {
+//         padding: 30px;
+//     }
+// }

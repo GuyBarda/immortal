@@ -1,0 +1,98 @@
+.popular-crypto-preview {
+    position: relative;
+    min-width: 100px;
+    padding: 20px;
+    // flex: 1;
+    width: 24%;
+    // background-color: #f8f8f8;
+    background-color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    overflow: hidden;
+
+    &:hover {
+        // background-color: #dcdcdc;
+        background-color: #eee9f8;
+
+        .opt-icon {
+            transform: translateX(0);
+        }
+    }
+
+    > * {
+        margin-block: 5px;
+    }
+
+    .opt-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+        margin: 15px;
+        transform: translateX(200%);
+
+        transition: transform 0.3s, color 0.2s;
+
+        &:hover {
+            color: #7422dd;
+        }
+    }
+
+    .icon-img {
+        border-radius: 50%;
+        background-color: #e5e6e9;
+        padding: 7px;
+
+        &.skeleton {
+            width: 45px;
+            height: 45px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .title-sec {
+        gap: 5px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .stock-title {
+            font-size: 1.4em;
+            text-transform: uppercase;
+
+            &.skeleton {
+                width: 40%;
+                height: 1.1em;
+            }
+        }
+
+        .stock-subtitle {
+            font-size: 0.7em;
+            color: #7c7c7c;
+
+            &.skeleton {
+                width: 40%;
+                height: 0.9em;
+            }
+        }
+    }
+    .price-title{
+        font-size: 0.8rem;
+    }
+    .price-title.skeleton {
+        width: 50%;
+        height: 0.9em;
+    }
+}
+
+@media (min-width: 768px) {
+    .popular-crypto-preview {
+        .title-sec {
+            flex-direction: row;
+            align-items: center;
+
+            .stock-subtitle {
+                font-size: 0.9em;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.main-header {
+    // grid-area: header;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    // padding-bottom: 30px;
+    // padding-inline: 50px;
+    align-items: center;
+    // border-bottom: 1px solid #efefef;
+
+    nav {
+        display: flex;
+        gap: 20px;
+        // color: $clr2;
+    }
+
+    .user-sign a {
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: $clr2;
+        color: $clr3;
+    }
+}

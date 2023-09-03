@@ -1,0 +1,31 @@
+// @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+//SETUP
+@import './setup/variables';
+@import './setup/mixins';
+@import './setup/functions';
+@import './setup/helpers';
+
+// BASE
+@import './base/base';
+@import './base/layout';
+
+// VIEWS
+@import './views/home';
+@import './views/join-now';
+@import './views/landing';
+@import './views/login';
+@import './views/profile';
+@import './views/wishlist';
+@import './views/main-content';
+@import './views/crypto-details';
+
+// CMPS
+@import './cmps/header';
+@import './cmps/slider';
+@import './cmps/skeleton';
+@import './cmps/sidebar';
+@import './cmps/transaction-preview';
+@import './cmps/hot-crypto-preview';
+@import './cmps/popular-crypto-preview';
+@import './cmps/crypto-card';

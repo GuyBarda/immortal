@@ -1,0 +1,67 @@
+.main-content-sec {
+    padding-block: 50px;
+    grid-area: main;
+
+    .main-title {
+        font-size: 2rem;
+        font-weight: bolder;
+        color: white;
+    }
+
+    .subtitle {
+        margin-top: 10px;
+        color: rgb(154, 154, 154);
+        font-weight: bold;
+    }
+
+    .view-all {
+        align-self: flex-end;
+        width: max-content;
+        font-weight: bold;
+        padding: 7px 14px;
+        border-radius: 3px;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: rgb(230, 230, 230);
+        }
+    }
+
+    .hot-crypto-sec {
+        margin-top: 50px;
+        h1 {
+            font-size: 1.7rem;
+            color: white;
+        }
+        .hot-crypto-list {
+            margin-top: 30px;
+            gap: 10px;
+            flex-wrap: wrap;
+
+            @media (max-width:490px){
+                display: grid;
+                place-items: center;
+            }
+        }
+    }
+
+    .most-popular-sec {
+        margin-top: 50px;
+
+        .main-title {
+            font-size: 1.7rem;
+            color: black;
+        }
+        .most-popular-list {
+            margin-top: 30px;
+            gap: 10px;
+            flex-wrap: wrap;
+
+            @media (max-width:390px){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                place-items: center;
+            }
+        }
+    }
+}

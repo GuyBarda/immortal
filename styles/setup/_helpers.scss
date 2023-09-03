@@ -1,0 +1,43 @@
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.relative {
+    position: relative;
+}
+
+.gap {
+    gap: 1px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.space-evenly{
+    justify-content: space-evenly;
+}
